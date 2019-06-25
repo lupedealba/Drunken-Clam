@@ -1,18 +1,14 @@
 const router = require("express").Router();
 // Connect to the file that will make postman request 
-//const = require("../..//");
+const searchControls = require("../../controls/searchcontrols");
 
-router
-    .route("/")
-//Same as Line 2
-//.get(.findAll)
-//.post(.create);
+router.route("/")
+    .get(searchControls.findAll)
+    .post(searchControls.create);
 
-router
-    .route("/:id")
-//Same as Line 2
-//.get(.findById)
-//.put(.update)
-//.delete(.remove);
+router.route("/:id")
+    .get(searchControls.findById)
+    .put(searchControls.update)
+    .delete(searchControls.remove);
 
 module.exports = router;

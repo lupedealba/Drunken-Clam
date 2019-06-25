@@ -1,14 +1,14 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const clamSchema = new Schema({
+const estateSchema = new Schema({
 
     image: {
         type: String,
         required: true
     },
 
-    product_name: {
+    address: {
         type: String,
         required: true
     },
@@ -20,6 +20,6 @@ const clamSchema = new Schema({
 
 });
 
-const Clams = mongoose.model("Clams", clamSchema);
+const Estate = mongoose.model("Estate", estateSchema);
 
-module.exports = Clams;
+module.exports = Estate;

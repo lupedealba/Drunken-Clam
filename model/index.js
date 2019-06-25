@@ -1,3 +1,3 @@
 module.exports = {
-    Clams: require("./clam")
+    Clams: require("./estate")
 };
