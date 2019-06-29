@@ -1,11 +1,11 @@
 const router = require("express").Router();
 const path = require("path");
-const homeRoutes = require("./home");
+const userRoutes = require("./user");
 const searchRoutes = require("./search");
-const checkoutRoutes = require("./checkout");
+const estateRoutes = require("./estate");
 
-router.use("/home", homeRoutes);
+router.use("/user", userRoutes);
 router.use("/search", searchRoutes);
-router.use("/checkout", checkoutRoutes)
+router.use("/estate", estateRoutes)
 
 module.exports = router;
