@@ -42,6 +42,10 @@ const estateSchema = new Schema({
         type: String,
         required: true
     },
+    city: {
+        type: String,
+        required: true
+    },
     date: {
         type: Date,
         required: Date.now

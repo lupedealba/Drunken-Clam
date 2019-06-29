@@ -29,13 +29,14 @@ router.post("/estate", (req, res) => {
     const newEstate = new Estate({
         estatetitle: req.body.estatetitle,
         for: req.body.for,
-        bedrooms: req.body.bedrooms,
-        bathrooms: req.body.bathrooms,
-        garage: req.body.garage,
-        price: req.body.price,
         image: req.body.image,
-        contact: req.body.contact,
         address: req.body.address,
+        price: req.body.price,
+        bedrooms: req.body.bedrooms,
+        baths: req.body.bathrooms,
+        squarefeet: req.body.squarefeet,
+        garage: req.body.garage,
+        contact: req.body.contact,
         city: req.body.city
     });
     newEstate.save().then(doc => res.json(docs));
