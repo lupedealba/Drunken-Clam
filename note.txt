@@ -1,0 +1,13 @@
+npm install
+npm install --save spectre.css
+
+
+
+npm package called classnames:
+npm install --save classnames
+
+
+tried doing heroku but i never finished the tutrial
+because i realized i was on the wrong branch.
+https://shrouded-coast-11110.herokuapp.com/ | https://git.heroku.com/shrouded-coast-11110.git
+these are the links of the lupe branch heroku i accidently made.
