@@ -1,4 +1,4 @@
-const JwtStrategy = require("passport-jwt").Strategy;
+const JwtStrategy = require("passport-jwt").Strategy; // This module lets you authenticate endpoints using a JSON web token. It is intended to be used to secure RESTful endpoints without sessions.
 const ExtractJwt = require("passport-jwt").ExtractJwt;
 const mongoose = require("mongoose");
 const User = mongoose.model("user");
