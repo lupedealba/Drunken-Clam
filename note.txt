@@ -18,7 +18,9 @@ Then to open ROBO 3T I first had to open MONGO:
 
 figure out get route on server to be able to view my app locally with npm start.
 I could use homework react examples.
-Then keep editing the components
+Then keep editing the components.
+ANSWER: we dismissed this because we reorganized our front end files to go in the client folder.
+so now in order to see the front end work we are just doing npm start on terminal.
 
 
 
@@ -29,10 +31,6 @@ front end are gonna be in the client folder (public and src folder)
 
 the rest is back end. so we dont need a server.js for the back end because we will be doing it through heroku.
 
-so were going to make a plan with backend with Felipe's help. on how we should build the rest of the app, so
-that we wont have to burn the whole app.
-
-make plan
 push into github and master
 front end look
 read me
@@ -52,5 +50,5 @@ and i added on package.json:
 "client": "cd client && npm start",
     "dev": "concurrently --kill-others-on-fail \"npm run start\" \"npm run client\""
 
-so re install concurrently and then run:
-npm run dev
+the npm run dev will start both the server and the react app so that i can open both back end and front end locally.
+
