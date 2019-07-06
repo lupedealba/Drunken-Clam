@@ -46,7 +46,7 @@ const estateSchema = new Schema({
         type: String,
         required: true
     },
-    year: {
+    date: {
         type: Date,
         required: Date.now
     }
