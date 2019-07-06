@@ -10,7 +10,7 @@ const estateSchema = new Schema({
         type: String,
         required: true
     },
-    image: {
+    listingLink: {
         type: String,
         required: true
     },
@@ -30,7 +30,7 @@ const estateSchema = new Schema({
         type: String,
         required: true
     },
-    squarefeet: {
+    lotSize: {
         type: String,
         required: true
     },
@@ -42,7 +42,11 @@ const estateSchema = new Schema({
         type: String,
         required: true
     },
-    date: {
+    city: {
+        type: String,
+        required: true
+    },
+    year: {
         type: Date,
         required: Date.now
     }

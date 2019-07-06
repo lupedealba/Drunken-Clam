@@ -1,7 +1,7 @@
 const express = require('express');
 const router = express.Router();
 const Estate = require("../../model/estate");
-const nodemailer = require("nodemailer");
+const nodemailer = require("nodemailer"); // a module for Node.js applications to allow easy email sending
 
 router.get('/all', (req, res) => {
     Estate.find().then(properties => res.send(properties));
