@@ -59,3 +59,7 @@ Navbar
 Cards
 Footer
 
+So i work on Footer, README, and logo for site.
+
+merge my src folder with brandons
+
