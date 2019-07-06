@@ -27,7 +27,7 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 // MongoDB Configuration configuration (Change this URL to your own DB)
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/JulianDatabase";
+const MONGODB_URI = process.env.MONGODB_URI || "mongodb://localhost/Lupe_collection";
 
 // Connect to the Mongo DB
 mongoose.Promise = Promise;

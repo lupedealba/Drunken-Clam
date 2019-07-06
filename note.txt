@@ -6,8 +6,49 @@ npm install --save spectre.css
 npm package called classnames:
 npm install --save classnames
 
+Then to open ROBO 3T I first had to open MONGO:
+1. open 2 command prompt(the regular laptop one)
+2. copy and paste the following on one of them:
+    "C:\Program Files\MongoDB\Server\4.0\bin\mongod"
+3. copy and paste the following on the second prompt,
+(This one opens the shell so that i can edit my mongo throught their if i wanted):
+    "C:\Program Files\MongoDB\Server\4.0\bin\mongo"
+4. Then connect to the ROBO 3t:
 
-tried doing heroku but i never finished the tutrial
-because i realized i was on the wrong branch.
-https://shrouded-coast-11110.herokuapp.com/ | https://git.heroku.com/shrouded-coast-11110.git
-these are the links of the lupe branch heroku i accidently made.
+
+figure out get route on server to be able to view my app locally with npm start.
+I could use homework react examples.
+Then keep editing the components.
+ANSWER: we dismissed this because we reorganized our front end files to go in the client folder.
+so now in order to see the front end work we are just doing npm start on terminal.
+
+
+
+tonight ask Andy how do i get to view my edits locally. what am i missing.
+ANSWER: Just get a separate client folder specifically for front end with a separate package.json
+
+front end are gonna be in the client folder (public and src folder)
+
+the rest is back end. so we dont need a server.js for the back end because we will be doing it through heroku.
+
+push into github and master
+front end look
+read me
+what are Brandons merge conflicts?
+
+PLAN
+make a separate package json in client???
+no
+
+npm run client to start client from the parent
+
+npm run dev to run the React app and Server at the same time with concurrently
+
+so i installed concurrently with the command: npm install concurrently --save-dev
+
+and i added on package.json:
+"client": "cd client && npm start",
+    "dev": "concurrently --kill-others-on-fail \"npm run start\" \"npm run client\""
+
+the npm run dev will start both the server and the react app so that i can open both back end and front end locally.
+
