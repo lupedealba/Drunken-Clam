@@ -14,7 +14,7 @@ const storage = multer.diskStorage({
 const upload = multer({
     storage: storage
 }).single("image");
-
+// fix the post route 404
 router.post("image", (req, res) => {
     upload(req, res, (err) => {
         if (err) {
@@ -25,7 +25,7 @@ router.post("image", (req, res) => {
     });
 });
 router.post("/estate", (req, res) => {
-
+    //fix the post route 404
     const newEstate = new Estate({
         estatetitle: req.body.estatetitle,
         for: req.body.for,
