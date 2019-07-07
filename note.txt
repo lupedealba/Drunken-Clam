@@ -52,3 +52,16 @@ and i added on package.json:
 
 the npm run dev will start both the server and the react app so that i can open both back end and front end locally.
 
+i did an npm install bootstrap in the client folder. Later do and uninstall of that same one in the maverick-move folder
+
+Layout of the Home Page:
+Navbar
+Cards
+Footer
+
+So i work on Footer, README, and logo for site.
+
+merge my src folder with brandons
+
+and organize the folders Brian so that they fit with the whole repo
+
