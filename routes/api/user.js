@@ -10,7 +10,7 @@ router.get('/', (req, res) => {
     User.find()
         .then(users => res.json(users));
 });
-
+// fix the post route 404
 router.post('/register', (req, res) => {
 
     User.findOne({ email: req.body.email }).then(user => {
@@ -70,7 +70,7 @@ passport.deserializeUser(function (id, done) {
         done(err, user);
     });
 });
-
+//fix post route 404 
 router.post('/login', function (req, res, next) {
 
     passport.authenticate('local', function (err, user, info) {
