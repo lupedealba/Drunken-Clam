@@ -29,12 +29,12 @@ router.post("/estate", (req, res) => {
     const newEstate = new Estate({
         estatetitle: req.body.estatetitle,
         for: req.body.for,
-        image: req.body.image,
+        listinglink: req.body.listinglink,
         address: req.body.address,
         price: req.body.price,
         bedrooms: req.body.bedrooms,
         baths: req.body.bathrooms,
-        squarefeet: req.body.squarefeet,
+        lotSize: req.body.lotSize,
         garage: req.body.garage,
         contact: req.body.contact,
         city: req.body.city
