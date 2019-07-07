@@ -16,13 +16,14 @@ import ShareIcon from '@material-ui/icons/Share';
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
 import MoreVertIcon from '@material-ui/icons/MoreVert';
 
-import {Grid} from '@material-ui/core';
+import { Grid, MenuItem } from '@material-ui/core';
+import './Card.css'
 import housingDataArray from './SampleData.json';
 // console.log(housingDataArray);
 
 const useStyles = makeStyles(theme => ({
   card: {
-    maxWidth: 345,
+    maxWidth: 450,
   },
   media: {
     height: 0,
@@ -70,7 +71,7 @@ export default function RecipeReviewCard() {
 //   }
 
   return (
-      <Grid container spacing={3}>
+      <Grid container style={{ paddingTop: 10, paddingLeft: 30, paddingRight: 30 }} spacing={2}>
 
       { housingDataArray.map((houseData, index) => (
           <Grid item xs={12} sm={6} md={4} lg={3}>
@@ -78,17 +79,23 @@ export default function RecipeReviewCard() {
         <Card className={classes.card}>
         <CardHeader
             avatar={
-            <Avatar aria-label="" className={classes.avatar}>
+            <Avatar aria-label="avatar" className={classes.avatar}>
                 <img src={ houseData.agentImage } alt={ houseData.listingAgent } />
             </Avatar>
             }
             action={
             <IconButton aria-label="Settings">
-                <MoreVertIcon />
+                <MoreVertIcon>
+                  <MenuItem primaryText="Refresh" />
+                  <MenuItem primaryText="Send feedback" />
+                  <MenuItem primaryText="Settings" />
+                  <MenuItem primaryText="Help" />
+                  <MenuItem primaryText="Sign out" />
+                </MoreVertIcon>
             </IconButton>
             }
-            title= { houseData.price }
-            subheader= { houseData.address}
+          title= { <Typography variant="subtitle2"> { houseData.price } </Typography> }
+          subheader= { houseData.address }
         />
         <CardMedia
             className={classes.media}
@@ -97,11 +104,9 @@ export default function RecipeReviewCard() {
         />
         <CardContent>
             <Typography variant="body2" color="textSecondary" component="p">
-            {/* { houseData.price }<br /> */}
-            {/* { houseData.address }<br /> */}
-            <span>Beds: { houseData.bedrooms } &bull; Baths: { houseData.baths } &bull; Size: { houseData.houseSize } sqrft</span><br />
-            Year: {houseData.year} &bull; Lot Size: {houseData.houseSize}<br />
-            Agent: { houseData.listingAgent } &bull; { houseData.brokerage }
+            <span>Beds: { houseData.bedrooms } &bull; Baths: { houseData.baths } &bull; Size: { houseData.houseSize } sqft</span><br />
+            Year: {houseData.year} &bull; Lot Size: {houseData.lotSize}<br />
+            Agent: { houseData.listingAgent } <br/> { houseData.brokerage }
             </Typography>
         </CardContent>
         <CardActions disableSpacing>
@@ -125,8 +130,7 @@ export default function RecipeReviewCard() {
         <Collapse in={expanded} timeout="auto" unmountOnExit>
             <CardContent>
             <Typography paragraph>
-                { houseData.details}
-
+                { houseData.details }
             </Typography>
             
             </CardContent>

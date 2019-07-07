@@ -26,7 +26,21 @@ function wait (ms) {
   //const browser = await puppeteer.launch({headless: false}); // default is true  , slowMo: 1000
   const page = await browser.newPage();
   await page.goto(searchUrl, {waitUntil: 'load'});
-
+  await page.goto('https://www.zillow.com/homes/for_sale/', {waitUntil: 'load'});
+  
+  //   const searchBox = await page.$('input.react-autosuggest__input');
+  //   const searchIcon = await page.$('span.searchBtnIcon.zsg-icon-searchglass');
+  //   const inputValue = await page.$eval('input.react-autosuggest__input', el => el.value);
+  //   console.log('inputValue ', inputValue);
+  //   for (let i = 0; i < inputValue.length; i++) {
+  //     await page.keyboard.down('Backspace');
+  //   }
+  // await page.$eval('input.react-autosuggest__input', (el, value) => el.value = value, 'Malibu ca');
+  //await page.keyboard.type('Malibu ca');
+  //await page.click('span.searchBtnIcon.zsg-icon-searchglass');
+  //await page.keyboard.down("Enter");
+  //await page.waitForNavigation({waitUntil: 'load'});
+  //await wait(1000);
  
   let articleElements = await page.evaluate(() => 
     Array.from(document.querySelectorAll('article'))
@@ -162,7 +176,7 @@ for (let i = 0; i < articleElements.length; i++) {
 //   );
 
   fs.writeFile(
-    '../json/filtered.json',
+    './SampleData.json',
     JSON.stringify(filteredData, null, 2),
     (err) => err ? console.error('Data not written!', err) : console.log('Data Written')
   );
