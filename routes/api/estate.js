@@ -15,8 +15,8 @@ router.get("/recent", (req, res) => {
 
 });
 
-router.get("/count/:city", (req, res) => {
-    Estate.find({ city: req.params.city }).count()
+router.get("/count/:address", (req, res) => {
+    Estate.find({ address: req.params.address }).count()
         .then(docs => {
             res.json(docs);
         })

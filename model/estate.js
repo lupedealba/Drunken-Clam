@@ -30,29 +30,49 @@ const estateSchema = new Schema({
         type: String,
         required: true
     },
+    houseSize: {
+        type: String,
+        required: true
+    },
+    date: {
+        type: Date,
+        required: Date.now
+    },
+    heating: {
+        type: String,
+        required: true
+    },
+    cooling: {
+        type: String,
+        required: true
+    },
     lotSize: {
         type: String,
         required: true
     },
-    garage: {
-        type: Boolean,
-        required: true
-    },
-    contact: {
+    listingAgent: {
         type: String,
         required: true
     },
-    city: {
+    brokerage: {
         type: String,
         required: true
     },
-    year: {
-        type: Date,
-        required: Date.now
+    houseImage: {
+        type: String,
+        required: true
+    },
+    agentImage: {
+        type: String,
+        required: true
+    },
+    details: {
+        type: String,
+        required: true
     }
 
 });
+const Estate = mongoose.model("estate", estateSchema);
 
-module.exports = User = mongoose.model("Estate", estateSchema);
-
+module.exports = { Estate };
 

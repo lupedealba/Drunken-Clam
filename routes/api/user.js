@@ -3,14 +3,14 @@ const bcrypt = require("bcryptjs"); // bcyrpt helps you hash(chop up) passwords
 const jwt = require('jsonwebtoken');
 const keys = require("../../configs/key");
 const passport = require("passport") // helps authenticate requests through a set of plugins called strategies
-const LocalStratgy = require("passport-local").Strategy; // This module lets you authenticate using a username and password in your Node.js applications. This module lets you authenticate using a username and password in your Node.js applications.
+const LocalStratgy = require("passport-local").Strategy; // This module lets you authenticate using a username and password in your Node.js applications. 
 const User = require("../../model/user");
 
 router.get('/', (req, res) => {
     User.find()
         .then(users => res.json(users));
 });
-
+// fix the post route 404
 router.post('/register', (req, res) => {
 
     User.findOne({ email: req.body.email }).then(user => {
@@ -70,7 +70,7 @@ passport.deserializeUser(function (id, done) {
         done(err, user);
     });
 });
-
+//fix post route 404 
 router.post('/login', function (req, res, next) {
 
     passport.authenticate('local', function (err, user, info) {
