@@ -50,10 +50,6 @@ const estateSchema = new Schema({
         type: String,
         required: true
     },
-    garage: {
-        type: Boolean,
-        required: true
-    },
     listingAgent: {
         type: String,
         required: true
@@ -76,7 +72,7 @@ const estateSchema = new Schema({
     }
 
 });
+const Estate = mongoose.model("estate", estateSchema);
 
-module.exports = User = mongoose.model("Estate", estateSchema);
-
+module.exports = { Estate };
 

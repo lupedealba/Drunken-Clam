@@ -2,7 +2,7 @@ const router = require("express").Router();
 const path = require('path');
 const multer = require('multer'); //  adds a body object and a file or files object to the request object. The body object contains the values of the text fields of the form, the file or files object contains the files uploaded via the form.
 
-const Estate = require("../../model/estate");
+const { Estate } = require("../../model/estate");
 
 const storage = multer.diskStorage({
     destination: './public/upload',
@@ -26,19 +26,28 @@ router.post("image", (req, res) => {
 });
 router.post("/estate", (req, res) => {
     //fix the post route 404
+    console.log("create estate")
     const newEstate = new Estate({
         estatetitle: req.body.estatetitle,
         for: req.body.for,
-        listinglink: req.body.listinglink,
+        listingLink: req.body.listingLink,
         address: req.body.address,
         price: req.body.price,
         bedrooms: req.body.bedrooms,
-        baths: req.body.bathrooms,
+        baths: req.body.baths,
+        houseSize: req.body.houseSize,
+        date: req.body.date,
+        heating: req.body.heating,
+        cooling: req.body.cooling,
         lotSize: req.body.lotSize,
-        garage: req.body.garage,
-        contact: req.body.contact,
-        city: req.body.city
+        listingAgent: req.body.listingAgent,
+        brokerage: req.body.brokerage,
+        houseImage: req.body.houseImage,
+        agentImage: req.body.agentImage,
+        details: req.body.details
+
     });
-    newEstate.save().then(doc => res.json(docs));
+    newEstate.save().then(doc => res.json(doc));
+
 });
 module.exports = router;
