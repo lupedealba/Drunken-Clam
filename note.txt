@@ -63,3 +63,5 @@ So i work on Footer, README, and logo for site.
 
 merge my src folder with brandons
 
+and organize the folders Brian so that they fit with the whole repo
+
