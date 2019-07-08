@@ -64,5 +64,6 @@ So i work on Footer, README, and logo for site.
 
 merge my src folder with brandons
 
-and organize the folders Brian so that they fit with the whole repo
-
+we had to do the following after getting Brians code in our code.
+npm install @material-ui/core
+ npm install @material-ui/icons
