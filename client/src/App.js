@@ -1,19 +1,26 @@
-import React, { Component } from 'react';
-// import logo from './logo.svg';
+import React from 'react';
+import Navbar from './components/NavBar';
+import Cards from './components/Card';
+import Signin from './components/Signin';
+import Register from './components/Register';
+import Carousel from './components/Carousel'
 import './App.css';
 
-import Navbar from "./components/Navbar/Navbar.js";
-import 'bootstrap/dist/css/bootstrap.min.css';
+function App() {
+  return (
+    <div className="App">
 
 
-class App extends Component {
-  render() {
-    return (
-      <div>
         <Navbar />
-      </div>
-    );
-  }
+        {/* <Carousel /> */}
+        <Signin />
+        <Register />
+        <Cards />
+
+
+    </div>
+  );
+
 }
 // function  App() {
 //   return (
