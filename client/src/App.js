@@ -1,5 +1,6 @@
 import React from 'react';
-import Navbar from './components/NavBar';
+import Navbar from './components/Navbar/Navbar.js';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import Cards from './components/Card';
 import Signin from './components/Signin';
 import Register from './components/Register';

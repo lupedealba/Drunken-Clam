@@ -1,5 +1,4 @@
 npm install
-npm install --save spectre.css
 
 
 
@@ -36,6 +35,7 @@ front end look
 read me
 brians folders organization
 make sure heroku works
+and presentation points
 
 PLAN
 make a separate package json in client???
