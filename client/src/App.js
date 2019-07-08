@@ -4,6 +4,8 @@
 import React from 'react';
 import Navbar from './components/NavBar';
 import Cards from './components/Card';
+import Signin from './components/Signin';
+import Register from './components/Register';
 import './App.css';
 
 function App() {
@@ -12,6 +14,8 @@ function App() {
      
       
         <Navbar />
+        {/* <Signin />
+        <Register /> */}
         <Cards />
 
     
