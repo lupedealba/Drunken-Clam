@@ -1,12 +1,3 @@
-import React, { Component } from 'react';
-// import logo from './logo.svg';
-import './App.css';
-
-import Navbar from "./components/Navbar/Navbar.js";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-
-
 import React from 'react';
 import Navbar from './components/NavBar';
 import Cards from './components/Card';
