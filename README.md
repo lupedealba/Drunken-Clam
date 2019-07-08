@@ -1,6 +1,6 @@
 ## Maverick Move
 
-A website that helps find a good home in the state that is has some beautiful "Maverick" trees, our websites goal is 
+A website that helps find a good home in a state that is has some beautiful "Maverick" trees, our websites goal is 
 for you to see a list of beautiful homes for different types of people and families. You can also create a login to
 stay in touch with agents who are selling the home you are interested in purchasing.
 
