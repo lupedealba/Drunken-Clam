@@ -6,6 +6,7 @@ import Navbar from './components/NavBar';
 import Cards from './components/Card';
 import Signin from './components/Signin';
 import Register from './components/Register';
+import Carousel from './components/Carousel'
 import './App.css';
 
 function App() {
@@ -14,8 +15,9 @@ function App() {
      
       
         <Navbar />
-        {/* <Signin />
-        <Register /> */}
+        {/* <Carousel /> */}
+        <Signin />
+        <Register />
         <Cards />
 
     

@@ -1,34 +1,29 @@
 // https://reactjsexample.com/lightweight-and-fully-customizable-carousel-component-for-react/
 
-import React, { Component } from 'react';
-import ReactDOM from 'react-dom';
-import { Carousel } from 'react-responsive-carousel';
+// import React, { Component } from 'react';
+// import ReactDOM from 'react-dom';
+// import { Carousel } from 'react-responsive-carousel';
+import React from "react";
+import { Carousel } from "react-responsive-carousel";
+
 import housingDataArray from './SampleData.json';
 
-class DemoCarousel extends Component {
-    render() {
-        return (
-            <Carousel>
+export default () => (
+  <Carousel autoPlay>
+   
+      
 
             { housingDataArray.map((houseData, index) => (
                 <div>
-                    <img src={ houseData.listingLink }/>
-                    <p className="legend">{hous}</p>
+                    <a href={ houseData.listingLink }><img src={ houseData.houseImage }/></a>
+                    <p className="legend">{houseData.price}</p>
+                    <p className="legend">{houseData.address}</p>
                 </div>
-                <div>
-                    <img src="assets/2.jpeg" />
-                    <p className="legend">Legend 2</p>
-                </div>
-                <div>
-                    <img src="assets/3.jpeg" />
-                    <p className="legend">Legend 3</p>
-                </div>
+            ))}
             </Carousel>
         );
-    }
-});
-
-ReactDOM.render(<DemoCarousel />, document.querySelector('.demo-carousel'));
+  
+//ReactDOM.render(<DemoCarousel />, document.querySelector('Navbar'));
 
 // Don't forget to include the css in your page
 
