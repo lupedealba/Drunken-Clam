@@ -3,18 +3,11 @@ import Navbar from './components/NavBar';
 import Cards from './components/Card';
 import Signin from './components/Signin';
 import Register from './components/Register';
-<<<<<<< HEAD
-// import Carousel from './components/Carousel'
-=======
-import Carousel from './components/Carousel'
->>>>>>> a662245bb26d7bf3ab1a42cbb567de43a344edc7
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-<<<<<<< HEAD
-=======
      
       
         <Navbar />
@@ -22,25 +15,11 @@ function App() {
         <Signin />
         <Register />
         <Cards />
->>>>>>> a662245bb26d7bf3ab1a42cbb567de43a344edc7
 
-    
-    </div>
-  );
-
-<<<<<<< HEAD
-        <Navbar />
-        {/* <Carousel /> */}
-        <Signin />
-        <Register />
-        <Cards />
 
 
     </div>
   );
-
-=======
->>>>>>> a662245bb26d7bf3ab1a42cbb567de43a344edc7
 }
 // function  App() {
 //   return (
