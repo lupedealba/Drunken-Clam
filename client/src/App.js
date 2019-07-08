@@ -1,32 +1,23 @@
-import React, { Component } from 'react';
-// import logo from './logo.svg';
-import './App.css';
-
-import Navbar from "./components/Navbar/Navbar.js";
-import 'bootstrap/dist/css/bootstrap.min.css';
-
-
-
 import React from 'react';
 import Navbar from './components/NavBar';
 import Cards from './components/Card';
 import Signin from './components/Signin';
 import Register from './components/Register';
-import Carousel from './components/Carousel'
+// import Carousel from './components/Carousel'
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-     
-      
-        <Navbar />
-        {/* <Carousel /> */}
-        <Signin />
-        <Register />
-        <Cards />
 
-    
+
+      <Navbar />
+      {/* <Carousel /> */}
+      <Signin />
+      <Register />
+      <Cards />
+
+
     </div>
   );
 
