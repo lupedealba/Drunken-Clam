@@ -18,7 +18,7 @@ router.post('/register', (req, res) => {
             return res.status(400).json({ email: 'Email Already Exists' });
         }
         const newUser = new User({
-            name: req.body.name,
+            username: req.body.username,
             email: req.body.email,
             password: req.body.password
         });
@@ -30,7 +30,7 @@ router.post('/register', (req, res) => {
                 newUser.password = hash;
                 newUser
                     .save()
-                    .then(user => res.json(user))
+                    .then(user => res.json(username))
                     .catch(err => console.log(err));
             });
         });
