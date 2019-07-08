@@ -34,7 +34,11 @@ the rest is back end. so we dont need a server.js for the back end because we wi
 push into github and master
 front end look
 read me
-Brians folders arrangement
+brians folders organization
+make sure heroku works
+banner behind logins
+practice presentation
+merge mine and Brians navbar
 
 PLAN
 make a separate package json in client???
@@ -59,9 +63,10 @@ Navbar
 Cards
 Footer
 
-So i work on Footer, README, and logo for site.
+So i work on Footer, README,
 
 merge my src folder with brandons
 
-and organize the folders Brian so that they fit with the whole repo
-
+we had to do the following after getting Brians code in our code.
+npm install @material-ui/core
+ npm install @material-ui/icons
