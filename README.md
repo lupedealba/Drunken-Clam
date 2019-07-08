@@ -1,3 +1,20 @@
+## Maverick Move
+
+A website that helps find a good home in the state that is has some beautiful "Maverick" trees, our websites goal is 
+for you to see a list of beautiful homes for different types of people and families. You can also create a login to
+stay in touch with agents who are selling the home you are interested in purchasing.
+
+## Maverick Move contains the following key programs and packages:
+
+## React
+## MongoDB
+## Express
+## Nodejs
+## Bootstrap
+## Bcryptjs
+## Material-UI/Core
+## Material-UI/Icon
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
