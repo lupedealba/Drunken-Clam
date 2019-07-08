@@ -1,21 +1,22 @@
 import React from 'react';
-import Navbar from './components/NavBar';
+//import Navbar from './components/NavBar';
+import Navbar from './components/Navbar/Navbar';
 import Cards from './components/Card';
 import Signin from './components/Signin';
 import Register from './components/Register';
+import Banner from './components/Banner';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-
-
-      <Navbar />
-      {/* <Carousel /> */}
-      <Signin />
-      <Register />
-      <Cards />
-
+     
+        <Navbar />
+        <Banner/>
+        {/* <Signin />
+        <Register /> */}
+        <Cards />
 
     </div>
   );
