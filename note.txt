@@ -34,7 +34,8 @@ the rest is back end. so we dont need a server.js for the back end because we wi
 push into github and master
 front end look
 read me
-what are Brandons merge conflicts?
+brians folders organization
+make sure heroku works
 
 PLAN
 make a separate package json in client???

@@ -1,20 +1,44 @@
-import React, { Component } from 'react';
-// import logo from './logo.svg';
+
+
+
+import React from 'react';
+import Navbar from './components/NavBar';
+import Cards from './components/Card';
 import './App.css';
 
-import Navbar from "./components/Navbar/Navbar.js";
-import 'bootstrap/dist/css/bootstrap.min.css';
+function App() {
+  return (
+    <div className="App">
 
 
-class App extends Component {
-  render() {
-    return (
-      <div>
         <Navbar />
-      </div>
-    );
-  }
+        <Cards />
+
+
+    </div>
+  );
 }
+
+export default App;
+//the code Lupe had in app.js//////////////////////////////////////////////////////////////////
+// import React, { Component } from 'react';
+// // import logo from './logo.svg';
+// import './App.css';
+
+// import Navbar from "./components/Navbar/Navbar.js";
+// import 'bootstrap/dist/css/bootstrap.min.css';
+
+
+// class App extends Component {
+//   render() {
+//     return (
+//       <div>
+//         <Navbar />
+//       </div>
+//     );
+//   }
+// }
+////////////////////////////////////////////////////////////////
 // function  App() {
 //   return (
 //     <div className="App">
