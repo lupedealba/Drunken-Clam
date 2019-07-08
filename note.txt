@@ -35,7 +35,13 @@ front end look
 read me
 brians folders organization
 make sure heroku works
+<<<<<<< HEAD
 and presentation points
+=======
+banner behind logins
+practice presentation
+merge mine and Brians navbar
+>>>>>>> 29bb0751d28f91dacd97dead667e7596fab4e6fa
 
 PLAN
 make a separate package json in client???
@@ -60,7 +66,7 @@ Navbar
 Cards
 Footer
 
-So i work on Footer, README, and logo for site.
+So i work on Footer, README,
 
 merge my src folder with brandons
 
