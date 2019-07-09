@@ -16,21 +16,12 @@ const bgColor = {
 //   render() {
   function Navbar() {
     return (
-<<<<<<< HEAD
-      <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-    <img src={logo} width="100" height="100" alt="Logo" />
-    <a className="navbar-brand app-title" href="https://github.com/lupedealba/maverick-move">Maverick Move</a>
-    <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span className="navbar-toggler-icon"></span>
-    </button>
-=======
       <nav className="navbar navbar-expand-lg navbar-dark" style={bgColor}>
   <img src={logo} width="100" height="100" alt="Logo" />
   <a className="navbar-brand app-title" href="https://github.com/lupedealba/maverick-move">Maverick Move</a>
   <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span className="navbar-toggler-icon"></span>
   </button>
->>>>>>> 29bb0751d28f91dacd97dead667e7596fab4e6fa
 
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
       <ul className="navbar-nav mr-auto">
