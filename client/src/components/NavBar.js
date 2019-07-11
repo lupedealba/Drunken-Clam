@@ -17,6 +17,8 @@ import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
 
+// import logo from './images/logo.png';
+
 // import InputLabel from '@material-ui/core/InputLabel';
 // import { withStyles } from '@material-ui/core/styles';
 // import FormControl from '@material-ui/core/FormControl';
@@ -27,7 +29,7 @@ import MoreIcon from '@material-ui/icons/MoreVert';
 //const stateList = ['AL','AK','AZ','AR','CA','CO','CT','DE','FL','GA','HI','ID','IL','IN','IA','KS','KY','LA','ME','MD','MA','MI','MN','MS','MO','MT','NE','NV','NH','NJ','NM','NY','NC','ND','OH','OK','OR','PA','RI','SC','SD','TN','TX','UT','VT','VA','WA','WV','WI','WY'];
 
 
- 
+
 
 
 const useStyles = makeStyles(theme => ({
@@ -205,8 +207,8 @@ export default function PrimarySearchAppBar() {
               }}
               inputProps={{ 'aria-label': 'Search' }}
             />
-          </div> 
-          
+          </div>
+
           <div className={classes.grow} />
           <div className={classes.sectionDesktop}>
             <IconButton aria-label="Show 4 new mails" color="inherit">

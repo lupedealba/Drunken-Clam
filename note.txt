@@ -1,5 +1,4 @@
 npm install
-npm install --save spectre.css
 
 
 
@@ -36,9 +35,13 @@ front end look
 read me
 brians folders organization
 make sure heroku works
+<<<<<<< HEAD
+and presentation points
+=======
 banner behind logins
 practice presentation
 merge mine and Brians navbar
+>>>>>>> 29bb0751d28f91dacd97dead667e7596fab4e6fa
 
 PLAN
 make a separate package json in client???

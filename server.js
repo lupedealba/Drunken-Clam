@@ -8,11 +8,12 @@ const logger = require("morgan");
 const PORT = process.env.PORT || 3001;
 const session = require("express-session");
 const passport = require("passport");
-const publicDirectory = path.join(__dirname, 'client', 'build');
-console.log(publicDirectory);
+// const publicDirectory = path.join(__dirname, 'client', 'build');
+// console.log(publicDirectory);
 
-app.use(express.static(publicDirectory));
-app.use(express.static("./public"));
+// app.use(express.static(publicDirectory));
+// app.use(express.static("./public"));
+app.use(express.static('client/build'));
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(routes);
